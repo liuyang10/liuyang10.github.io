@@ -233,6 +233,113 @@
             
               
                 
+                <a class="post-title-link" href="/2016/05/12/伪类和伪元素/" itemprop="url">
+                  伪类和伪元素
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-05-12T17:52:50+08:00" content="2016-05-12">
+              2016-05-12
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><body style="font-size:16px;color:black;"><br><img src="http://o7231sj2f.bkt.clouddn.com/%E4%BC%AA%E7%B1%BB%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.png" alt=""></body></p>
+<h2 id="一、伪类"><a href="#一、伪类" class="headerlink" title="一、伪类"></a>一、伪类</h2><p>伪类选择元素基于的是当前元素处于的状态，或者说元素当前所具有的特性，而不是元素的id、class、属性等静态的标志。由于状态是动态变化的，所以一个元素达到一个特定状态时，它可能得到一个伪类的样式；当状态改变时，它又会失去这个样式。由此可以看出，它的功能和class有些类似，但它是基于文档之外的抽象，所以叫伪类。</p>
+<p>:link<br>伪类将应用于未被访问过的链接，与:visited互斥。</p>
+<p>:hover<br>伪类将应用于有鼠标指针悬停于其上的元素。</p>
+<p>:active<br>伪类将应用于被激活的元素，如被点击的链接、被按下的按钮等。</p>
+<p>:visited<br>伪类将应用于已经被访问过的链接，与:link互斥。</p>
+<p><strong>爱恨法则：love&amp;&amp;hate</strong>  </p>
+<p>在CSS的定义中，同一个元素的:hover必须位于 :link、:visited之后才能生效，:active必须位于:hover之后才能生效。   </p>
+<h2 id="二、伪元素"><a href="#二、伪元素" class="headerlink" title="二、伪元素"></a>二、伪元素</h2><p>与伪类针对特殊状态的元素不同的是，伪元素是对元素中的特定内容进行操作，它所操作的层次比伪类更深了一层，也因此它的动态性比伪类要低得多。实际上，设计伪元素的目的就是去选取诸如元素内容第一个字（母）、第一行，选取某些内容前面或后面这种普通的选择器无法完成的工作。它控制的内容实际上和元素是相同的，但是它本身只是基于元素的抽象，并不存在于文档中，所以叫伪元素。  </p>
+<p>::first-letter<br>伪元素的样式将应用于元素文本的第一个字（母）。  </p>
+<p>::first-line<br>伪元素的样式将应用于元素文本的第一行。</p>
+<p>::before<br>在元素内容的最前面添加新内容。 </p>
+<p>::after<br>在元素内容的最后面添加新内容。</p>
+<p>::section<br>给被选中的元素设置字体颜色和背景颜色（背景色默认为淡蓝色）</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/05/12/使用hexo搭建博客/" itemprop="url">
                   使用hexo搭建博客
                 </a>
@@ -604,7 +711,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">Artikel</span>
             </a>
           </div>

@@ -84,19 +84,24 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="description" content="一、伪类伪类选择元素基于的是当前元素处于的状态，或者说元素当前所具有的特性，而不是元素的id、class、属性等静态的标志。由于状态是动态变化的，所以一个元素达到一个特定状态时，它可能得到一个伪类的样式；当状态改变时，它又会失去这个样式。由此可以看出，它的功能和class有些类似，但它是基于文档之外的抽象，所以叫伪类。
+:link伪类将应用于未被访问过的链接，与:visited互斥。
+:hove">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2016/05/11/hello-world/index.html">
+<meta property="og:title" content="伪类和伪元素">
+<meta property="og:url" content="http://yoursite.com/2016/05/12/伪类和伪元素/index.html">
 <meta property="og:site_name" content="troy的前端小窝">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-05-11T06:20:38.000Z">
+<meta property="og:description" content="一、伪类伪类选择元素基于的是当前元素处于的状态，或者说元素当前所具有的特性，而不是元素的id、class、属性等静态的标志。由于状态是动态变化的，所以一个元素达到一个特定状态时，它可能得到一个伪类的样式；当状态改变时，它又会失去这个样式。由此可以看出，它的功能和class有些类似，但它是基于文档之外的抽象，所以叫伪类。
+:link伪类将应用于未被访问过的链接，与:visited互斥。
+:hove">
+<meta property="og:image" content="http://o7231sj2f.bkt.clouddn.com/%E4%BC%AA%E7%B1%BB%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.png">
+<meta property="og:updated_time" content="2016-05-12T13:28:34.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="伪类和伪元素">
+<meta name="twitter:description" content="一、伪类伪类选择元素基于的是当前元素处于的状态，或者说元素当前所具有的特性，而不是元素的id、class、属性等静态的标志。由于状态是动态变化的，所以一个元素达到一个特定状态时，它可能得到一个伪类的样式；当状态改变时，它又会失去这个样式。由此可以看出，它的功能和class有些类似，但它是基于文档之外的抽象，所以叫伪类。
+:link伪类将应用于未被访问过的链接，与:visited互斥。
+:hove">
+<meta name="twitter:image" content="http://o7231sj2f.bkt.clouddn.com/%E4%BC%AA%E7%B1%BB%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.png">
 
 
 
@@ -114,7 +119,7 @@ Quick">
   };
 </script>
 
-  <title> Hello World | troy的前端小窝 </title>
+  <title> 伪类和伪元素 | troy的前端小窝 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -234,7 +239,7 @@ Quick">
             
             
               
-                Hello World
+                伪类和伪元素
               
             
           </h1>
@@ -246,8 +251,8 @@ Quick">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Veröffentlicht am</span>
-            <time itemprop="dateCreated" datetime="2016-05-11T14:20:38+08:00" content="2016-05-11">
-              2016-05-11
+            <time itemprop="dateCreated" datetime="2016-05-12T17:52:50+08:00" content="2016-05-12">
+              2016-05-12
             </time>
           </span>
 
@@ -274,15 +279,20 @@ Quick">
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p><body style="font-size:16px;color:black;"><br><img src="http://o7231sj2f.bkt.clouddn.com/%E4%BC%AA%E7%B1%BB%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.png" alt=""></body></p>
+<h2 id="一、伪类"><a href="#一、伪类" class="headerlink" title="一、伪类"></a>一、伪类</h2><p>伪类选择元素基于的是当前元素处于的状态，或者说元素当前所具有的特性，而不是元素的id、class、属性等静态的标志。由于状态是动态变化的，所以一个元素达到一个特定状态时，它可能得到一个伪类的样式；当状态改变时，它又会失去这个样式。由此可以看出，它的功能和class有些类似，但它是基于文档之外的抽象，所以叫伪类。</p>
+<p>:link<br>伪类将应用于未被访问过的链接，与:visited互斥。</p>
+<p>:hover<br>伪类将应用于有鼠标指针悬停于其上的元素。</p>
+<p>:active<br>伪类将应用于被激活的元素，如被点击的链接、被按下的按钮等。</p>
+<p>:visited<br>伪类将应用于已经被访问过的链接，与:link互斥。</p>
+<p><strong>爱恨法则：love&amp;&amp;hate</strong>  </p>
+<p>在CSS的定义中，同一个元素的:hover必须位于 :link、:visited之后才能生效，:active必须位于:hover之后才能生效。   </p>
+<h2 id="二、伪元素"><a href="#二、伪元素" class="headerlink" title="二、伪元素"></a>二、伪元素</h2><p>与伪类针对特殊状态的元素不同的是，伪元素是对元素中的特定内容进行操作，它所操作的层次比伪类更深了一层，也因此它的动态性比伪类要低得多。实际上，设计伪元素的目的就是去选取诸如元素内容第一个字（母）、第一行，选取某些内容前面或后面这种普通的选择器无法完成的工作。它控制的内容实际上和元素是相同的，但是它本身只是基于元素的抽象，并不存在于文档中，所以叫伪元素。  </p>
+<p>::first-letter<br>伪元素的样式将应用于元素文本的第一个字（母）。  </p>
+<p>::first-line<br>伪元素的样式将应用于元素文本的第一行。</p>
+<p>::before<br>在元素内容的最前面添加新内容。 </p>
+<p>::after<br>在元素内容的最后面添加新内容。</p>
+<p>::section<br>给被选中的元素设置字体颜色和背景颜色（背景色默认为淡蓝色）</p>
 
       
     </div>
@@ -307,13 +317,13 @@ Quick">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/05/12/使用hexo搭建博客/" rel="next" title="使用hexo搭建博客">
+                <i class="fa fa-chevron-left"></i> 使用hexo搭建博客
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/05/11/我的第一篇博客/" rel="prev" title="我的第一篇博客">
-                我的第一篇博客 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -413,7 +423,7 @@ Quick">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、伪类"><span class="nav-number">1.</span> <span class="nav-text">一、伪类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、伪元素"><span class="nav-number">2.</span> <span class="nav-text">二、伪元素</span></a></li></ol></div>
             
           </div>
         </section>
