@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion">
+<html class="theme-next mist use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="html5, 前端" />
 
 
 
@@ -84,28 +84,28 @@
 
 
 
-<meta name="description" content="记录学习生活">
+<meta name="description" content="Memory">
 <meta property="og:type" content="website">
 <meta property="og:title" content="troy的前端小窝">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="troy的前端小窝">
-<meta property="og:description" content="记录学习生活">
+<meta property="og:description" content="Memory">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="troy的前端小窝">
-<meta name="twitter:description" content="记录学习生活">
+<meta name="twitter:description" content="Memory">
 
 
 
 <script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Muse',
+    scheme: 'Mist',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
     duoshuo: {
       userId: 0,
-      author: 'Author'
+      author: '博主'
     }
   };
 </script>
@@ -113,7 +113,7 @@
   <title> troy的前端小窝 </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
 
@@ -170,7 +170,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            首页
           </a>
         </li>
       
@@ -180,7 +180,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            归档
           </a>
         </li>
       
@@ -190,7 +190,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Tags
+            标签
           </a>
         </li>
       
@@ -246,7 +246,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-05-12T17:52:50+08:00" content="2016-05-12">
               2016-05-12
             </time>
@@ -255,6 +255,13 @@
           
 
           
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/12/伪类和伪元素/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/12/伪类和伪元素/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
           
 
@@ -277,22 +284,15 @@
       
         
           
-            <p><body style="font-size:16px;color:black;"><br><img src="http://o7231sj2f.bkt.clouddn.com/%E4%BC%AA%E7%B1%BB%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.png" alt=""></body></p>
-<h2 id="一、伪类"><a href="#一、伪类" class="headerlink" title="一、伪类"></a>一、伪类</h2><p>伪类选择元素基于的是当前元素处于的状态，或者说元素当前所具有的特性，而不是元素的id、class、属性等静态的标志。由于状态是动态变化的，所以一个元素达到一个特定状态时，它可能得到一个伪类的样式；当状态改变时，它又会失去这个样式。由此可以看出，它的功能和class有些类似，但它是基于文档之外的抽象，所以叫伪类。</p>
-<p>:link<br>伪类将应用于未被访问过的链接，与:visited互斥。</p>
-<p>:hover<br>伪类将应用于有鼠标指针悬停于其上的元素。</p>
-<p>:active<br>伪类将应用于被激活的元素，如被点击的链接、被按下的按钮等。</p>
-<p>:visited<br>伪类将应用于已经被访问过的链接，与:link互斥。</p>
-<p><strong>爱恨法则：love&amp;&amp;hate</strong>  </p>
-<p>在CSS的定义中，同一个元素的:hover必须位于 :link、:visited之后才能生效，:active必须位于:hover之后才能生效。   </p>
-<h2 id="二、伪元素"><a href="#二、伪元素" class="headerlink" title="二、伪元素"></a>二、伪元素</h2><p>与伪类针对特殊状态的元素不同的是，伪元素是对元素中的特定内容进行操作，它所操作的层次比伪类更深了一层，也因此它的动态性比伪类要低得多。实际上，设计伪元素的目的就是去选取诸如元素内容第一个字（母）、第一行，选取某些内容前面或后面这种普通的选择器无法完成的工作。它控制的内容实际上和元素是相同的，但是它本身只是基于元素的抽象，并不存在于文档中，所以叫伪元素。  </p>
-<p>::first-letter<br>伪元素的样式将应用于元素文本的第一个字（母）。  </p>
-<p>::first-line<br>伪元素的样式将应用于元素文本的第一行。</p>
-<p>::before<br>在元素内容的最前面添加新内容。 </p>
-<p>::after<br>在元素内容的最后面添加新内容。</p>
-<p>::section<br>给被选中的元素设置字体颜色和背景颜色（背景色默认为淡蓝色）</p>
-
           
+一、伪类伪类选择元素基于的是当前元素处于的状态，或者说元素当前所具有的特性，而不是元素的id、class、属性等静态的标志。由于状态是动态变化的，所以一个元素达到一个特定状态时，它可能得到一个伪类的样式；当状态改变时，它又会失去这个样式。由此可以看出，它的功能和class有些类似，但它是基于文档之
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/05/12/伪类和伪元素/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -353,7 +353,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-05-12T09:14:26+08:00" content="2016-05-12">
               2016-05-12
             </time>
@@ -362,6 +362,13 @@
           
 
           
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/12/使用hexo搭建博客/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/12/使用hexo搭建博客/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
           
 
@@ -384,67 +391,16 @@
       
         
           
-            <p><body style="font-size:16px;color:black;"><br>每个优秀的程序员在成长过程都有许多个人的体会与感悟，这些感悟让他走的更远，而通常个人博客就是这样一个记录个人成长的地方。在这里，程序员可以畅所欲言，分享自己的对技术的体会，对生活的感悟，在这里你可以看到一个对技术对生活充满追求的码农。</body></p>
-<p>拥有一个这样的独立而自由的空间是一件非常有趣的事情。</p>
-<p>下面我简单的介绍一下如何利用hexo建立个人博客。</p>
-<p></p><h2>一、需要用到的应用程序</h2><p></p>
-<li>node.js <a href="https://nodejs.org/en/" target="_blank">下载地址</a>安装时一直下一步就OK</li>
+          每个优秀的程序员在成长过程都有许多个人的体会与感悟，这些感悟让他走的更远，而通常个人博客就是这样一个记录个人成长的地方。在这里，程序员可以畅所欲言，分享自己的对技术的体会，对生活的感悟，在这里你可以看到一个对技术对生活充满追求的码农。
+拥有一个这样的独立而自由的空间是一件非常有趣的事情。
+下面我简单
+          ...
 
-<li>Git  <a href="https://git-scm.com/" target="_blank" rel="external">下载地址</a> 如果你已经安装xcode，那已经默认集成git，不需要再继续安装</li>
-
-<p><li>hexo 如果你已经安装好上面两个应用程序，那么通过npm来安装hexo，这个过程需要一些时间，请不要进行操作</li></p>
-<div style="background-color:#fdf6e3;color: #657b83;">sudo npm install -g hexo</div>
-
-<p>按enter后需要输入你mac登陆密码</p>
-<p>在终端cd到你建立的文件夹名称下，执行：</p>
-<div style="background-color:#fdf6e3;color: #657b83;">cd 文件路径</div>
-
-<p>然后执行以下命令初始化</p>
-<div style="background-color:#fdf6e3;color: #657b83;">hexo init</div>
-
-<p>启动服务</p>
-<div style="background-color:#fdf6e3;color: #657b83;">hexo server</div>
-
-<p>复制弹出来的网址<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 在浏览器中访问，如果成功则说明安装完毕。</p>
-<p></p><h2>二、关联Github</h2><br>本地创建SSH key，然后将生成的SSH key文件内容添加到github帐号上去<p></p>
-<pre><code>1) ssh-keygen
-    系统提示输入文件保存位置等信息，连续敲三次回车即可，生成的SSH key文件保存在中～/.ssh/id_rsa.pub
-2) vim ~/.ssh/id_rsa.pub
-    文本编辑工具打开该文件
-3) 先复制，再 shift+:  q
-4）浏览器-github.com-settings-SSH and GPG keys,点击new SSH key  ,名称可以自己命，下面的key输入刚刚复制的内容
-5）邮箱验证即可
-</code></pre><p></p><h2>三、git仓库相关操作</h2><p></p>
-<h3>1.创建仓库</h3>
-
-<pre><code>   3，克隆git仓库
-    git  clone 地址
-4，查看当前的仓库状态
-    git status
-5  ，此时出现克隆后的仓库文件夹，用sublime修改仓库
-        如：修改README.md、增加index.html、增加index.css等等
-6, 将修改的仓库再上传至github
-    1）终端进入仓库文件夹
-    2）git add 修改的文件名称     如： git add README.md
-    3)  git commit -m “修改日志”   注：此时提交到了git的暂存区
-    4)  本地配置
-        配置用户名：git config —global user.name “JeryTao&quot;
-        配置邮箱：git config —global user.email &quot;1140792628@q.com”
-    5) 确认发布仓库更新
-        git remote add origin git@github.com:yourname/learngit.git
-        git push -u origin master
-</code></pre><p></p><h2>四、创建二级域名 ，与博客绑定</h2><br>域名要和你的仓库名一样！（不一样会出现404，无法访问）<p></p>
-<pre><code>1，new repository
-    liuyang10.github.io
-2,  config 配置文件
-    deploy:
-         type: git
-         repo: https://github.com/JeryTao/JerryTao.github.io.git
-3, hexo git插件安装
-    npm install hexo-deployer-git —save
-4, 生成：hexo g  部署：hexo d
-</code></pre>
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/05/12/使用hexo搭建博客/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -505,7 +461,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-05-11T14:47:55+08:00" content="2016-05-11">
               2016-05-11
             </time>
@@ -514,6 +470,13 @@
           
 
           
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/11/我的第一篇博客/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/11/我的第一篇博客/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
           
 
@@ -536,12 +499,17 @@
       
         
           
-            <p>JS好难啊！！！！</p>
+          JS好难啊！！！！
 
-<p><img src="http://img2.imgtn.bdimg.com/it/u=4188804350,386259052&amp;fm=21&amp;gp=0.jpg" alt=""></p>
-<p>笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞</p>
 
-          
+笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟先飞笨鸟
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/05/11/我的第一篇博客/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -602,7 +570,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-05-11T14:20:38+08:00" content="2016-05-11">
               2016-05-11
             </time>
@@ -611,6 +579,13 @@
           
 
           
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/11/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/11/hello-world/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
           
 
@@ -633,17 +608,14 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          ...
 
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/05/11/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -703,16 +675,16 @@
       <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
+               src="http://o7231sj2f.bkt.clouddn.com/me.jpeg"
                alt="刘洋" />
           <p class="site-author-name" itemprop="name">刘洋</p>
-          <p class="site-description motion-element" itemprop="description">记录学习生活</p>
+          <p class="site-description motion-element" itemprop="description">Memory</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">4</span>
-              <span class="site-state-item-name">Artikel</span>
+              <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
@@ -732,6 +704,24 @@
         
 
         
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://taojin.science" title="陶金的博客" target="_blank">陶金的博客</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://qlhtml.github.io" title="钱磊的博客" target="_blank">钱磊的博客</a>
+                </li>
+              
+            </ul>
+          </div>
         
 
       </section>
@@ -759,13 +749,13 @@
 </div>
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="http://hexo.io">Hexo</a>
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
-  Theme -
+  主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
+    NexT.Mist
   </a>
 </div>
 
@@ -842,9 +832,32 @@
 
   
 
+  
+    
+  
 
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"liuyang10"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
   
+    
+      
+      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
 
 
 
